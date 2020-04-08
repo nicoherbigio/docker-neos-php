@@ -18,8 +18,8 @@ RUN set -ex \
     && apt-get update \
     && apt-get install -y --no-install-recommends git graphicsmagick libgraphicsmagick1-dev libzip-dev libldap2-dev sudo unzip wget \
     && docker-php-ext-install -j$(nproc) exif intl ldap opcache pdo_mysql soap zip \
-    && pecl install gmagick-beta \
-    && docker-php-ext-enable gmagick \
+    && pecl install gmagick-beta redis \
+    && docker-php-ext-enable gmagick redis \
     && apt-get remove -y libzip-dev \
     && rm -rf /var/lib/apt/lists/*
 
