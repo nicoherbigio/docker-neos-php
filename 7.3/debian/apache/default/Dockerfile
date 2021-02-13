@@ -16,10 +16,10 @@ RUN useradd --gid ${WWW_GROUP} --uid ${WWW_USER_ID} --create-home --shell /bin/b
 
 RUN set -ex \
     && apt-get update \
-    && apt-get install -y --no-install-recommends git graphicsmagick libgraphicsmagick1-dev libvips libvips-dev libvips-tools libzip-dev libldap2-dev sudo unzip wget \
+    && apt-get install -y --no-install-recommends git ghostscript graphicsmagick libgraphicsmagick1-dev imagemagick libmagickwand-dev libvips libvips-dev libvips-tools libzip-dev libldap2-dev sudo unzip wget \
     && docker-php-ext-install -j$(nproc) exif intl ldap opcache pdo_mysql soap zip \
-    && pecl install gmagick-beta redis vips \
-    && docker-php-ext-enable gmagick redis vips \
+    && pecl install gmagick-beta imagick redis vips \
+    && docker-php-ext-enable gmagick imagick redis vips \
     && apt-get remove -y libzip-dev \
     && rm -rf /var/lib/apt/lists/*
 
