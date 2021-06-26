@@ -17,6 +17,7 @@ RUN useradd --gid ${WWW_GROUP} --uid ${WWW_USER_ID} --create-home --shell /bin/b
 RUN set -ex \
     && apt-get update \
     && apt-get install -y --no-install-recommends git ghostscript imagemagick libmagickwand-dev libvips libvips-dev libvips-tools libzip-dev libldap2-dev sudo unzip wget \
+    && sed -i -e 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/' /etc/ImageMagick-6/policy.xml \
     && docker-php-ext-install -j$(nproc) exif intl ldap opcache pdo_mysql soap zip \
     && pecl install imagick redis vips \
     && docker-php-ext-enable imagick redis vips \
