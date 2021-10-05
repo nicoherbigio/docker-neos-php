@@ -15,8 +15,8 @@ env:
   DOCKERHUB_IMAGE_TAGS: |
     nicoherbigde/neos-php:7.4-apache
     nicoherbigio/neos-php:7.4-apache
-    nicoherbigde/neos-php:7.4.23-apache
-    nicoherbigio/neos-php:7.4.23-apache
+    nicoherbigde/neos-php:7.4.24-apache
+    nicoherbigio/neos-php:7.4.24-apache
 
 jobs:
   build-and-push:
