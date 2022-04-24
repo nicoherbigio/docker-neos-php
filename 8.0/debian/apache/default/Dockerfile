@@ -63,7 +63,7 @@ RUN set -ex \
 #   - use PHP production settings as default
 #   - reconfigure PHP settings for TYPO3 CMS
 
-ENV APACHE_DOCUMENT_ROOT=/app/public
+ENV APACHE_DOCUMENT_ROOT=/app/Web
 
 RUN set -ex \
     && a2enmod expires deflate headers rewrite \
