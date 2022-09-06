@@ -61,7 +61,7 @@ RUN set -ex \
 #   - switch Apache server signature off
 #   - make Apache document root configureable by environment variable
 #   - use PHP production settings as default
-#   - reconfigure PHP settings for TYPO3 CMS
+#   - reconfigure PHP settings for NEOS
 
 ENV APACHE_DOCUMENT_ROOT=/app/Web
 
