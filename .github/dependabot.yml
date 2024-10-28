@@ -26,10 +26,10 @@ updates:
       - dependency-name: "php"
         update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
 
-  - package-ecosystem: "docker"
-    directory: "/8.3/debian/apache/default"
-    schedule:
-      interval: "daily"
-    ignore:
-      - dependency-name: "php"
-        update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
+#  - package-ecosystem: "docker"
+#    directory: "/8.3/debian/apache/default"
+#    schedule:
+#      interval: "daily"
+#    ignore:
+#      - dependency-name: "php"
+#        update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
