@@ -6,7 +6,7 @@
 
  * [`8.3-apache`, `8.3-apache-bullseye`, `8.3.10-apache`, `8.3.10-apache-bullseye`](https://github.com/nicoherbigio/docker-neos-php/blob/main/8.3/debian/apache/default/Dockerfile)
  * [`8.2-apache`, `8.2-apache-bullseye`, `8.2.27-apache`, `8.2.27-apache-bullseye`](https://github.com/nicoherbigio/docker-neos-php/blob/main/8.2/debian/apache/default/Dockerfile)
- * [`8.1-apache`, `8.1-apache-bullseye`, `8.1.31-apache`, `8.1.31-apache-bullseye`](https://github.com/nicoherbigio/docker-neos-php/blob/main/8.1/debian/apache/default/Dockerfile)
+ * [`8.1-apache`, `8.1-apache-bullseye`, `8.1.32-apache`, `8.1.32-apache-bullseye`](https://github.com/nicoherbigio/docker-neos-php/blob/main/8.1/debian/apache/default/Dockerfile)
 
 ## How to get this image
 
