@@ -53,7 +53,7 @@ RUN set -ex \
     && apt-get install -y --no-install-recommends git ghostscript imagemagick libmagickwand-dev libvips libvips-dev libvips-tools libzip-dev libldap2-dev sudo unzip wget \
     && sed -i -e 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/' /etc/ImageMagick-6/policy.xml \
     && docker-php-ext-install -j$(nproc) exif intl ldap opcache pdo_mysql soap zip \
-    && pecl install imagick redis vips \
+    && pecl install imagick-3.8.0 redis-6.2.0 vips-1.0.13 \
     && docker-php-ext-enable imagick redis vips \
     && apt-get remove -y libzip-dev \
     && rm -rf /var/lib/apt/lists/*
