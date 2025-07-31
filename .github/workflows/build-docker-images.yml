@@ -41,8 +41,8 @@ jobs:
             docker-tags: |
               nicoherbigde/neos-php:8.3-apache
               nicoherbigde/neos-php:8.3-apache-bullseye
-              nicoherbigde/neos-php:8.3.21-apache
-              nicoherbigde/neos-php:8.3.21-apache-bullseye
+              nicoherbigde/neos-php:8.3.22-apache
+              nicoherbigde/neos-php:8.3.22-apache-bullseye
 
     steps:
       - name: Checkout Git Repository
