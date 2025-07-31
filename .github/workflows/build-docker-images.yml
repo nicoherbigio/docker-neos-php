@@ -8,7 +8,7 @@ on:
       - '.github/**'
       - '8.1/**'
       - '8.2/**'
-#      - '8.3/**'
+      - '8.3/**'
   schedule:
     - cron: '0 1 * * 6'
   workflow_dispatch:
@@ -20,8 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [8.1-bullseye, 8.2-bullseye]
-#        version: [8.1-bullseye, 8.2-bullseye, 8.3-bullseye]
+        version: [8.1-bullseye, 8.2-bullseye, 8.3-bullseye]
         include:
           - version: 8.1-bullseye
             docker-context: 8.1/debian/apache/default
@@ -37,13 +36,13 @@ jobs:
               nicoherbigde/neos-php:8.2-apache-bullseye
               nicoherbigde/neos-php:8.2.29-apache
               nicoherbigde/neos-php:8.2.29-apache-bullseye
-#          - version: 8.3-bullseye
-#            docker-context: 8.3/debian/apache/default
-#            docker-tags: |
-#              nicoherbigde/neos-php:8.3-apache
-#              nicoherbigde/neos-php:8.3-apache-bullseye
-#              nicoherbigde/neos-php:8.3.10-apache
-#              nicoherbigde/neos-php:8.3.10-apache-bullseye
+          - version: 8.3-bullseye
+            docker-context: 8.3/debian/apache/default
+            docker-tags: |
+              nicoherbigde/neos-php:8.3-apache
+              nicoherbigde/neos-php:8.3-apache-bullseye
+              nicoherbigde/neos-php:8.3.10-apache
+              nicoherbigde/neos-php:8.3.10-apache-bullseye
 
     steps:
       - name: Checkout Git Repository
