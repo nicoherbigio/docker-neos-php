@@ -50,7 +50,7 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en
 
 RUN set -ex \
     && apt-get update \
-    && apt-get install -y --no-install-recommends git ghostscript imagemagick libmagickwand-dev libvips libvips-dev libvips-tools libzip-dev libldap2-dev sudo unzip wget \
+    && apt-get install -y --no-install-recommends ghostscript git imagemagick libicu-dev libldap2-dev libmagickwand-dev libvips libvips-dev libvips-tools libzip-dev sudo unzip wget \
     && sed -i -e 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/' /etc/ImageMagick-6/policy.xml \
     && docker-php-ext-install -j$(nproc) exif intl ldap opcache pdo_mysql soap zip \
     && pecl install imagick-3.8.0 redis-6.2.0 vips-1.0.13 \
