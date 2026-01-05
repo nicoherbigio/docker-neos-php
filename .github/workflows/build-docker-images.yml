@@ -41,8 +41,8 @@ jobs:
             docker-tags: |
               nicoherbigde/neos-php:8.4-apache
               nicoherbigde/neos-php:8.4-apache-trixie
-              nicoherbigde/neos-php:8.4.15-apache
-              nicoherbigde/neos-php:8.4.15-apache-trixie
+              nicoherbigde/neos-php:8.4.16-apache
+              nicoherbigde/neos-php:8.4.16-apache-trixie
 
     steps:
       - name: Checkout Git Repository
