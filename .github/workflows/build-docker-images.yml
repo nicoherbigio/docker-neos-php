@@ -42,8 +42,8 @@ jobs:
             docker-tags: |
               nicoherbigde/neos-php:8.4-apache
               nicoherbigde/neos-php:8.4-apache-trixie
-              nicoherbigde/neos-php:8.4.16-apache
-              nicoherbigde/neos-php:8.4.16-apache-trixie
+              nicoherbigde/neos-php:8.4.17-apache
+              nicoherbigde/neos-php:8.4.17-apache-trixie
           - version: 8.5-trixie
             docker-context: 8.5/debian/apache/default
             docker-tags: |
